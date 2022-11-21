@@ -23,10 +23,11 @@ scanf("%d",&n);
 //aX^n+bX^m+cX^p+d
 // printf("\n %dX^%d+%dX^%d+%dX^%d+%dX \n", a, n, b, m, c, p, d);
 //Aqui empieza la integral
-    // n++;
+    n++;
     // if (a>1 && n>1 )
     // printf("%dX^%d",a,n);
-    // if ((a>1 && n>1) && (a==n) )
-    // printf("X^%d",a,n);
-printf("(""%dX^%d"")/%d",a,n,n); // Prueba impresion de parentesis
+    if ((a>1 && n>1) && (a==n) )
+        printf("X^%d",a,n);
+    if ((a>1 && n>1) && (a!=n))
+        printf("(""%dX^%d"")/%d",a,n,n); // Prueba impresion de parentesis
 }
