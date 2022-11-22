@@ -3,23 +3,29 @@
 void main()
 
 {
-int a, b, c, d, n, m, p; //la variable d es la constante
+float acumx, acumy,acumxx,acumyy;
+int i,j,a, b, c, d, n, m, p, x, y; //la variable d es la constante
 printf("\n Favor de intruducir las constantes de la ecuacion (a, b, c, d) y sus exponentes (n, m, p) \n");
 printf("\n aX^n+bX^m+cX^p+d \n");
 printf("\n Favor de proporcionar la constante ""a"" \n"); // carga de exponentes y constantes
 scanf("%d",&a);
 printf("\n Favor de proporcionar el exponente ""n"" \n");
 scanf("%d",&n);
-printf("\n Favor de proporcionar la constante ""b"" \n");
-scanf("%d",&b);
-printf("\n Favor de proporcionar el exponente ""m""\n");
-scanf("%d",&m);
-printf("\n Favor de proporcionar la constante ""c"" \n"); // carga de exponentes y constantes
-scanf("%d",&c);
-printf("\n Favor de proporcionar el exponente ""p"" \n");
-scanf("%d",&p);
-printf("\n Favor de proporcionar la constante ""d"" \n"); // carga de exponentes y constantes
-scanf("%d",&d);
+// printf("\n Favor de proporcionar la constante ""b"" \n");
+// scanf("%d",&b);
+// printf("\n Favor de proporcionar el exponente ""m""\n");
+// scanf("%d",&m);
+// printf("\n Favor de proporcionar la constante ""c"" \n"); // carga de exponentes y constantes
+// scanf("%d",&c);
+// printf("\n Favor de proporcionar el exponente ""p"" \n");
+// scanf("%d",&p);
+// printf("\n Favor de proporcionar la constante ""d"" \n"); // carga de exponentes y constantes
+// scanf("%d",&d);
+printf("\n Favor deos limites de la integral");
+printf("\n Favor de proporcionar limite Siperior \n"); // carga de Limites
+scanf("%d",&x);
+// printf("\n Favor de proporcionar limite Inferior  \n");
+//scanf("%d",&y);
 //aX^n+bX^m+cX^p+d
 // printf("\n %dX^%d+%dX^%d+%dX^%d+%dX \n", a, n, b, m, c, p, d);
 //Aqui empieza la integral
@@ -62,4 +68,27 @@ printf("+");
 //aX^n+ bX^m + cX^p +d
 printf("+");
 printf("%dX+C\n",d);
+//primera integral definida variable X
+//aX^n +bX^m+cX^p+d
+//acumx=0;
+
+
+//float acumxx;
+// if (n>1)
+acumx=1;
+int np=n+1;
+printf("%d\n",n);
+printf("%d\n",np);
+{
+    for (i=0;i<n;i++)
+{
+    acumx=(x*acumx);
+}
+}
+printf("%.2f\n",acumx); //la variable X elevada al exponente n+1
+acumxx=a*(acumx/n);//
+printf("%.2f\n",acumxx);
+//Segunda integral definida variable X
+//aX^n +bX^m+cX^p+d
+
 }
