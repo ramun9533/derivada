@@ -32,6 +32,9 @@ scanf("%d",&x);
 n++; //primera integral
     // if (a>1 && n>1 )
     // printf("%dX^%d",a,n);
+    if (a==1 && n>1) //aX^n+bX^m+cX^p+d
+        printf("X^%d",n);
+        
 printf("\n");
     if ((a>1 && n>1) && (a==n) )
         printf("X^%d",a,n);
@@ -43,8 +46,10 @@ printf("\n");
 // scanf("%d",&b);
 // printf("\n Favor de proporcionar el exponente ""m""\n");
 m++;
-    // if (a>1 && n>1 )
-    // printf("%dX^%d",a,n);
+if (b==1 && m>1) //aX^n+bX^m+cX^p+d
+        printf("X^%d",m);
+if (a>1 && n>1 )
+printf("%dX^%d",a,n);
 printf("+");
     if ((b>1 && m>1) && (b==m) )
         printf("X^%d",m);
@@ -57,8 +62,10 @@ printf("+");
 // printf("\n Favor de proporcionar el exponente ""p"" \n");
 // scanf("%d",&p);
 p++;
-    // if (a>1 && n>1 )
-    // printf("%dX^%d",a,n);
+if (c==1 && p>1) //aX^n+bX^m+cX^p+d
+        printf("X^%d",p);
+if (a>1 && n>1 )
+printf("%dX^%d",a,n);
 printf("+");
     if ((c>1 && p>1) && (c==p) )
         printf("X^%d",p);
@@ -77,8 +84,8 @@ printf("%dX+C\n",d);
 // if (n>1)
 acumx=1;
 int np=n+1;
-printf("%d\n",n);
-printf("%d\n",np);
+// printf("%d\n",n);
+// printf("%d\n",np);
 {
     for (i=0;i<n;i++)
 {
