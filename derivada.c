@@ -3,7 +3,7 @@
 void main()
 
 {
-float acumx1, acumx2, acumx3, acumx, acumy,acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy, acumyy1, acumyy2 ,acumyy3,acumy1, acumy2, acumy3;
+float acumxxx, acumx1, acumx2, acumx3, acumx, acumy,acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy, acumyy1, acumyy2 ,acumyy3,acumy1, acumy2, acumy3;
 int i,j,a, b, c, d, n, m, p, x, y; //la variable d es la constante
 printf("\n Favor de intruducir las constantes de la ecuacion (a, b, c, d) y sus exponentes (n, m, p) \n");
 printf("\n aX^n+bX^m+cX^p+d \n");
@@ -40,6 +40,7 @@ printf("\n");
         printf("X^%d",a,n);
     if ((a>1 && n>1) && (a!=n))
         printf("(""%dX^%d"")/%d",a,n,n); // Prueba impresion de parentesis
+printf("+");
 //Segunda integral
 //aX^n+ bX^m +cX^p+d
 // printf("\n Favor de proporcionar la constante ""b"" \n");
@@ -55,6 +56,7 @@ printf("+");
         printf("X^%d",m);
     if ((b>1 && m>1) && (b!=m))
         printf("(""%dX^%d"")/%d",b,m,m); // Prueba impresion de parentesis
+printf("+");
 //Tercera Integral
 //aX^n+ bX^m + cX^p +d
 // printf("\n Favor de proporcionar la constante ""c"" \n"); // carga de exponentes y constantes
@@ -128,7 +130,7 @@ printf("%.2f\n",acumxx2);
 //Cuarta integral definida variable X
 //aX^n +bX^m+ cX^p+ d
 acumx3=d*x; //Suma 4 de X
-acumxx3=acumxx2+acumxx1+acumxx+acumx3;
+acumxx3=acumxx2+acumxx1+acumxx+acumx3;//Suma de limite Superior
 printf("%.2f\n",acumxx3);
 //Integral definida con el limite inferior
 // acumyy, acumyy1, acumyy2 ,acumyy3,acumy, acumy1, acumy2, acumy3;
@@ -186,6 +188,9 @@ printf("%.2f\n",acumyy2);
 //Cuarta integral definida variable X
 //aX^n +bX^m+ cX^p+ d
 acumy3=d*y; //Suma 4 de X
-acumyy3=acumyy2+acumyy1+acumyy+acumy3;
+acumyy3=acumyy2+acumyy1+acumyy+acumy3; //Suma de limite Inferior
 printf("%.2f\n",acumyy3);
+//Suma de limite Inferior
+acumxxx=acumxx3-acumyy3;
+printf("El resultado de la integral es %.2f\n",acumxxx);
 }
