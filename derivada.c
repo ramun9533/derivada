@@ -3,7 +3,7 @@
 void main()
 
 {
-float acumx1, acumx2, acumx3, acumx, acumy,acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy;
+float acumx1, acumx2, acumx3, acumx, acumy,acumxx, acumxx1, acumxx2 ,acumxx3 ,acumyy, acumyy1, acumyy2 ,acumyy3,acumy1, acumy2, acumy3;
 int i,j,a, b, c, d, n, m, p, x, y; //la variable d es la constante
 printf("\n Favor de intruducir las constantes de la ecuacion (a, b, c, d) y sus exponentes (n, m, p) \n");
 printf("\n aX^n+bX^m+cX^p+d \n");
@@ -24,8 +24,8 @@ scanf("%d",&d);
 printf("\n Favor deos limites de la integral");
 printf("\n Favor de proporcionar limite Siperior \n"); // carga de Limites
 scanf("%d",&x);
-// printf("\n Favor de proporcionar limite Inferior  \n");
-//scanf("%d",&y);
+printf("\n Favor de proporcionar limite Inferior  \n");
+scanf("%d",&y);
 //aX^n+bX^m+cX^p+d
 // printf("\n %dX^%d+%dX^%d+%dX^%d+%dX \n", a, n, b, m, c, p, d);
 //Aqui empieza la integral
@@ -130,4 +130,62 @@ printf("%.2f\n",acumxx2);
 acumx3=d*x; //Suma 4 de X
 acumxx3=acumxx2+acumxx1+acumxx+acumx3;
 printf("%.2f\n",acumxx3);
+//Integral definida con el limite inferior
+// acumyy, acumyy1, acumyy2 ,acumyy3,acumy, acumy1, acumy2, acumy3;
+// int i,j,a, b, c, d, n, m, p, x, y; //la variable d es la constante
+//primera integral definida variable X
+//aX^n +bX^m+cX^p+d
+//acumx=0;
+
+
+//float acumxx;
+// if (n>1)
+acumy=1;
+//int np=n+1;
+// printf("%d\n",n);
+// printf("%d\n",np);
+{
+    for (i=0;i<n;i++)
+{
+    acumy=(y*acumy);
+}
+}
+printf("%.2f\n",acumy); //la variable X elevada al exponente n+1
+acumyy=a*(acumy/n);//Suma 1 de X
+printf("%.2f\n",acumyy);
+//Segunda integral definida variable X
+//aX^n +bX^m+cX^p+d
+acumy1=1;
+//int np=n+1;
+printf("%d\n",m);
+//printf("%d\n",np);
+{
+    for (i=0;i<m;i++)
+{
+    acumy1=(y*acumy1);
+}
+}
+printf("%.2f\n",acumy1); //la variable X elevada al exponente n+1
+acumyy1=b*(acumy1/m);//Suma 2 de X
+printf("%.2f\n",acumyy1);
+//Tercera integral definida variable X
+//aX^n +bX^m+ cX^p+ d
+acumy2=1;
+//int np=n+1;
+printf("%d\n",p);
+//printf("%d\n",np);
+{
+    for (i=0;i<p;i++)
+{
+    acumy2=(y*acumy2);
+}
+}
+printf("%.2f\n",acumy2); //la variable X elevada al exponente n+1
+acumyy2=c*(acumy2/p);//Suma 3 de X
+printf("%.2f\n",acumyy2);
+//Cuarta integral definida variable X
+//aX^n +bX^m+ cX^p+ d
+acumy3=d*y; //Suma 4 de X
+acumyy3=acumyy2+acumyy1+acumyy+acumy3;
+printf("%.2f\n",acumyy3);
 }
