@@ -131,7 +131,7 @@ printf("%.2f\n",acumxx2);
 //aX^n +bX^m+ cX^p+ d
 acumx3=d*x; //Suma 4 de X
 acumxx3=acumxx2+acumxx1+acumxx+acumx3;//Suma de limite Superior
-printf("%.2f\n",acumxx3);
+printf("%.2f limite Superior \n",acumxx3);
 //Integral definida con el limite inferior
 // acumyy, acumyy1, acumyy2 ,acumyy3,acumy, acumy1, acumy2, acumy3;
 // int i,j,a, b, c, d, n, m, p, x, y; //la variable d es la constante
@@ -189,7 +189,7 @@ printf("%.2f\n",acumyy2);
 //aX^n +bX^m+ cX^p+ d
 acumy3=d*y; //Suma 4 de X
 acumyy3=acumyy2+acumyy1+acumyy+acumy3; //Suma de limite Inferior
-printf("%.2f\n",acumyy3);
+printf("%.2f limite inferior\n",acumyy3);
 //Suma de limite Inferior
 acumxxx=acumxx3-acumyy3;
 printf("El resultado de la integral es %.2f\n",acumxxx);
